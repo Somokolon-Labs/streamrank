@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     description: "Retrieval + ranking in under 30ms p95, with a live A/B experiment and streaming session features.",
     type: "website",
   },
+  icons: { icon: [{ url: "/favicon.svg", type: "image/svg+xml" }] },
 };
 
 export const viewport: Viewport = { themeColor: "#FBFAF8", width: "device-width", initialScale: 1 };

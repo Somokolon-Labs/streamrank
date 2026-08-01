@@ -1,0 +1,4 @@
+# StreamRank storefront - public demo
+User-agent: *
+Allow: /
+Crawl-delay: 1
