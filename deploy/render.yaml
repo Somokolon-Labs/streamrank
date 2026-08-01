@@ -1,0 +1,35 @@
+# Render blueprint. The Docker build generates the dataset and trains the model,
+# so the deployed service always ships a model with recorded metrics.
+#
+# Free/starter instances are memory-tight during training. If the build is
+# killed, either lower the training size (see dockerCommand below) or commit
+# ml/artifacts and skip training in the image.
+services:
+  - type: web
+    name: streamrank-api
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    plan: starter
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - { key: APP_ENV, value: render }
+      - { key: LOG_JSON, value: "true" }
+      - { key: PORT, value: "8200" }
+      - { key: WEB_CONCURRENCY, value: "1" }
+      - { key: REDIS_ENABLED, value: "false" }
+      - { key: REQUIRE_API_KEY, value: "false" }
+      - { key: ARTIFACTS_DIR, value: /app/ml/artifacts }
+      - { key: CATALOG_PATH, value: /app/data/catalog.json }
+      # Smaller candidate sets keep p95 comfortable on a shared CPU.
+      - { key: CANDIDATES_ANN, value: "100" }
+      - { key: CANDIDATES_COVISIT, value: "40" }
+      - { key: CANDIDATES_TRENDING, value: "30" }
+      - key: DATABASE_URL
+        fromDatabase: { name: streamrank-db, property: connectionString }
+
+databases:
+  - name: streamrank-db
+    plan: basic-256mb
+    postgresMajorVersion: "16"
