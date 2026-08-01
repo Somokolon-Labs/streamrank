@@ -110,14 +110,17 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
+      # GHCR rejects mixed-case repository names; org logins often are.
+      - name: Normalise the registry owner
+        run: echo "OWNER=${GITHUB_REPOSITORY_OWNER,,}" >> "$GITHUB_ENV"
       - name: API image
         uses: docker/build-push-action@v6
         with:
           context: .
           push: true
           tags: |
-            ghcr.io/${{ github.repository_owner }}/streamrank-api:1.0.0
-            ghcr.io/${{ github.repository_owner }}/streamrank-api:latest
+            ghcr.io/${{ env.OWNER }}/streamrank-api:1.0.0
+            ghcr.io/${{ env.OWNER }}/streamrank-api:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
       - name: Storefront image
@@ -127,7 +130,7 @@ jobs:
           push: true
           build-args: NEXT_PUBLIC_USE_MOCKS=false
           tags: |
-            ghcr.io/${{ github.repository_owner }}/streamrank-storefront:1.0.0
-            ghcr.io/${{ github.repository_owner }}/streamrank-storefront:latest
+            ghcr.io/${{ env.OWNER }}/streamrank-storefront:1.0.0
+            ghcr.io/${{ env.OWNER }}/streamrank-storefront:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
