@@ -79,7 +79,7 @@ def main() -> int:
     ).json()
     before = [item["item_id"] for item in cold["items"]]
     after = [item["item_id"] for item in warm["items"]]
-    changed = sum(1 for a, b in zip(before, after) if a != b)
+    changed = sum(1 for a, b in zip(before, after, strict=False) if a != b)
     check(
         "click reshapes the next response",
         changed > 0,
