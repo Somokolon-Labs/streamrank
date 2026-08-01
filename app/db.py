@@ -3,11 +3,13 @@
 from __future__ import annotations
 
 from collections.abc import AsyncIterator
+import asyncio
 from contextlib import asynccontextmanager
 from datetime import datetime, timezone
 from pathlib import Path
 
-from sqlalchemy import event, text
+from sqlalchemy import event, inspect, text
+from sqlalchemy.exc import IntegrityError, OperationalError, ProgrammingError
 from sqlalchemy.ext.asyncio import AsyncEngine, AsyncSession, async_sessionmaker, create_async_engine
 
 from .config import settings
@@ -62,9 +64,44 @@ async def session_scope() -> AsyncIterator[AsyncSession]:
             raise
 
 
-async def init_db() -> None:
-    async with get_engine().begin() as conn:
-        await conn.run_sync(Base.metadata.create_all)
+async def missing_tables() -> list[str]:
+    """Expected tables that do not exist yet. A read, so no write lock."""
+
+    def _inspect(sync_conn) -> list[str]:
+        present = set(inspect(sync_conn).get_table_names())
+        return sorted(set(Base.metadata.tables) - present)
+
+    async with get_engine().connect() as conn:
+        return await conn.run_sync(_inspect)
+
+
+async def init_db(retries: int = 10, base_delay_s: float = 0.4) -> None:
+    """Idempotent schema creation that tolerates replicas booting together.
+
+    ``create_all`` checks then creates, so simultaneous replicas against an empty
+    database can race and one loses the CREATE. Checking first means only the
+    first process takes a write lock; the rest verify and continue.
+    """
+    for attempt in range(1, retries + 1):
+        try:
+            missing = await missing_tables()
+        except Exception:
+            missing = sorted(Base.metadata.tables)
+
+        if not missing:
+            return
+
+        try:
+            async with get_engine().begin() as conn:
+                await conn.run_sync(Base.metadata.create_all)
+            if not await missing_tables():
+                return
+        except (OperationalError, ProgrammingError, IntegrityError):
+            pass
+
+        if attempt == retries:
+            raise RuntimeError(f"schema still incomplete after {retries} attempts: {missing}")
+        await asyncio.sleep(min(2.0, base_delay_s * attempt))
 
 
 async def ping() -> bool:
