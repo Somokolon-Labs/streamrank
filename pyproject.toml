@@ -1,0 +1,16 @@
+[project]
+name = "streamrank"
+version = "1.0.0"
+requires-python = ">=3.10"
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+exclude = [".venv", "data", "web", "__pycache__", "ml/artifacts"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "C4", "SIM", "RUF"]
+ignore = ["B008", "B904", "E501", "SIM105", "RUF012", "UP017", "UP007"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["app"]

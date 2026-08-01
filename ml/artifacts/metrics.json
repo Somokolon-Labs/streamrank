@@ -1,0 +1,31 @@
+{
+  "trained_at": "2026-07-31T19:32:03Z",
+  "items": 96,
+  "users": 1368,
+  "interactions": 75078,
+  "factors": 32,
+  "als_iterations": 18,
+  "als_seconds": 2.93,
+  "total_seconds": 12.24,
+  "ivf_clusters": 9,
+  "ranker": {
+    "model": "HistGradientBoosting",
+    "train_auc": 0.8875,
+    "train_ap": 0.6598
+  },
+  "offline": {
+    "users_evaluated": 530,
+    "ndcg_at_10": {
+      "popularity": 0.3844,
+      "mf": 0.2355,
+      "two_stage": 0.4561
+    },
+    "recall_at_10": {
+      "popularity": 0.4357,
+      "mf": 0.3193,
+      "two_stage": 0.5679
+    },
+    "catalog_coverage_at_10": 0.9583
+  },
+  "ndcg_lift_over_popularity": 0.1865
+}

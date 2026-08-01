@@ -1,0 +1,215 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: streamrank
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: streamrank-config
+  namespace: streamrank
+data:
+  APP_ENV: "kubernetes"
+  LOG_JSON: "true"
+  REDIS_ENABLED: "true"
+  REDIS_URL: "redis://redis:6379/0"
+  ARTIFACTS_DIR: "/app/ml/artifacts"
+  CATALOG_PATH: "/app/data/catalog.json"
+  CANDIDATES_ANN: "150"
+  CANDIDATES_COVISIT: "60"
+  CANDIDATES_TRENDING: "40"
+  ANN_PROBE_CLUSTERS: "8"
+  MMR_LAMBDA: "0.82"
+  CATEGORY_CAP: "6"
+  FEATURE_FLUSH_INTERVAL_S: "2.0"
+  EXPERIMENT_NAME: "ranker-v1-vs-popularity"
+  CONTROL_SHARE: "0.5"
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: streamrank-secrets
+  namespace: streamrank
+type: Opaque
+stringData:
+  DATABASE_URL: "postgresql://stream:stream@postgres:5432/streamrank"
+  API_KEYS: "demo-key-streamrank"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api
+  namespace: streamrank
+  labels: { app: api }
+spec:
+  replicas: 3
+  strategy:
+    type: RollingUpdate
+    rollingUpdate: { maxSurge: 1, maxUnavailable: 0 }
+  selector:
+    matchLabels: { app: api }
+  template:
+    metadata:
+      labels: { app: api }
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "8200"
+    spec:
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 10001
+      topologySpreadConstraints:
+        - maxSkew: 1
+          topologyKey: kubernetes.io/hostname
+          whenUnsatisfiable: ScheduleAnyway
+          labelSelector:
+            matchLabels: { app: api }
+      containers:
+        - name: api
+          image: ghcr.io/shahriarahmedseam/streamrank-api:1.0.0
+          command: ["sh", "-c"]
+          args: ["uvicorn app.main:app --host 0.0.0.0 --port 8200 --proxy-headers --forwarded-allow-ips=*"]
+          ports: [{ containerPort: 8200, name: http }]
+          envFrom:
+            - configMapRef: { name: streamrank-config }
+            - secretRef: { name: streamrank-secrets }
+          startupProbe:
+            httpGet: { path: /health, port: 8200 }
+            failureThreshold: 20
+            periodSeconds: 3
+          readinessProbe:
+            httpGet: { path: /health/ready, port: 8200 }
+            periodSeconds: 10
+          livenessProbe:
+            httpGet: { path: /health, port: 8200 }
+            periodSeconds: 20
+          resources:
+            # The index and model are memory resident; CPU is what serves p95.
+            requests: { cpu: 300m, memory: 512Mi }
+            limits: { cpu: "2", memory: 1.5Gi }
+          securityContext:
+            allowPrivilegeEscalation: false
+            capabilities: { drop: ["ALL"] }
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: api
+  namespace: streamrank
+spec:
+  selector: { app: api }
+  ports: [{ port: 8200, targetPort: 8200, name: http }]
+---
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: api
+  namespace: streamrank
+spec:
+  scaleTargetRef: { apiVersion: apps/v1, kind: Deployment, name: api }
+  minReplicas: 3
+  maxReplicas: 24
+  metrics:
+    - type: Resource
+      resource: { name: cpu, target: { type: Utilization, averageUtilization: 65 } }
+  behavior:
+    scaleUp:
+      stabilizationWindowSeconds: 20
+      policies: [{ type: Percent, value: 100, periodSeconds: 30 }]
+    scaleDown:
+      stabilizationWindowSeconds: 300
+      policies: [{ type: Pods, value: 2, periodSeconds: 60 }]
+---
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: api
+  namespace: streamrank
+spec:
+  minAvailable: 2
+  selector:
+    matchLabels: { app: api }
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis
+  namespace: streamrank
+spec:
+  replicas: 1
+  selector:
+    matchLabels: { app: redis }
+  template:
+    metadata:
+      labels: { app: redis }
+    spec:
+      containers:
+        - name: redis
+          image: redis:7-alpine
+          args: ["--maxmemory", "512mb", "--maxmemory-policy", "allkeys-lru"]
+          ports: [{ containerPort: 6379 }]
+          resources:
+            requests: { cpu: 50m, memory: 128Mi }
+            limits: { cpu: 500m, memory: 640Mi }
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: redis
+  namespace: streamrank
+spec:
+  selector: { app: redis }
+  ports: [{ port: 6379, targetPort: 6379 }]
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: retrain
+  namespace: streamrank
+spec:
+  # Retrain nightly from the durable interaction log, then roll the API so the
+  # new artifacts are picked up.
+  schedule: "0 3 * * *"
+  concurrencyPolicy: Forbid
+  successfulJobsHistoryLimit: 3
+  jobTemplate:
+    spec:
+      backoffLimit: 1
+      template:
+        spec:
+          restartPolicy: Never
+          containers:
+            - name: retrain
+              image: ghcr.io/shahriarahmedseam/streamrank-api:1.0.0
+              command: ["sh", "-c"]
+              args: ["python ml/train.py --factors 32 --iterations 18 && echo retrained"]
+              envFrom:
+                - configMapRef: { name: streamrank-config }
+                - secretRef: { name: streamrank-secrets }
+              resources:
+                requests: { cpu: 500m, memory: 1Gi }
+                limits: { cpu: "2", memory: 3Gi }
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: streamrank
+  namespace: streamrank
+  annotations:
+    nginx.ingress.kubernetes.io/proxy-body-size: 1m
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+spec:
+  ingressClassName: nginx
+  tls:
+    - hosts: [api.streamrank.example.com]
+      secretName: streamrank-tls
+  rules:
+    - host: api.streamrank.example.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: api
+                port: { number: 8200 }

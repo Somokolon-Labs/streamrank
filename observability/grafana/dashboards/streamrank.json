@@ -1,0 +1,110 @@
+{
+  "uid": "streamrank-serving",
+  "title": "StreamRank — serving and experiment",
+  "tags": ["streamrank", "recommendations"],
+  "timezone": "browser",
+  "schemaVersion": 39,
+  "version": 1,
+  "refresh": "5s",
+  "time": { "from": "now-30m", "to": "now" },
+  "panels": [
+    {
+      "type": "stat",
+      "title": "Requests / sec",
+      "gridPos": { "h": 4, "w": 4, "x": 0, "y": 0 },
+      "fieldConfig": { "defaults": { "unit": "reqps", "decimals": 1 } },
+      "targets": [{ "expr": "sum(rate(streamrank_impressions_total[1m]))", "refId": "A" }]
+    },
+    {
+      "type": "stat",
+      "title": "p95 serve latency",
+      "gridPos": { "h": 4, "w": 4, "x": 4, "y": 0 },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "s",
+          "decimals": 4,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              { "color": "green", "value": null },
+              { "color": "orange", "value": 0.05 },
+              { "color": "red", "value": 0.15 }
+            ]
+          }
+        }
+      },
+      "targets": [
+        { "expr": "histogram_quantile(0.95, sum(rate(streamrank_serve_seconds_bucket[5m])) by (le))", "refId": "A" }
+      ]
+    },
+    {
+      "type": "stat",
+      "title": "Active sessions",
+      "gridPos": { "h": 4, "w": 4, "x": 8, "y": 0 },
+      "targets": [{ "expr": "streamrank_active_sessions", "refId": "A" }]
+    },
+    {
+      "type": "stat",
+      "title": "Feature lag",
+      "gridPos": { "h": 4, "w": 4, "x": 12, "y": 0 },
+      "fieldConfig": { "defaults": { "unit": "s", "decimals": 2 } },
+      "targets": [{ "expr": "streamrank_feature_lag_seconds", "refId": "A" }]
+    },
+    {
+      "type": "stat",
+      "title": "Items indexed",
+      "gridPos": { "h": 4, "w": 4, "x": 16, "y": 0 },
+      "targets": [{ "expr": "streamrank_index_items", "refId": "A" }]
+    },
+    {
+      "type": "stat",
+      "title": "Cold-start requests",
+      "gridPos": { "h": 4, "w": 4, "x": 20, "y": 0 },
+      "targets": [{ "expr": "sum(increase(streamrank_cold_start_total[15m]))", "refId": "A" }]
+    },
+    {
+      "type": "timeseries",
+      "title": "Latency percentiles by stage",
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 4 },
+      "fieldConfig": { "defaults": { "unit": "s", "custom": { "fillOpacity": 10, "lineWidth": 2 } } },
+      "targets": [
+        { "expr": "histogram_quantile(0.95, sum(rate(streamrank_stage_seconds_bucket{stage=\"retrieval\"}[5m])) by (le))", "legendFormat": "retrieval p95", "refId": "A" },
+        { "expr": "histogram_quantile(0.95, sum(rate(streamrank_stage_seconds_bucket{stage=\"ranking\"}[5m])) by (le))", "legendFormat": "ranking p95", "refId": "B" },
+        { "expr": "histogram_quantile(0.99, sum(rate(streamrank_serve_seconds_bucket[5m])) by (le))", "legendFormat": "total p99", "refId": "C" }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "CTR by variant",
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 4 },
+      "fieldConfig": { "defaults": { "unit": "percentunit", "custom": { "fillOpacity": 8, "lineWidth": 2 } } },
+      "targets": [
+        {
+          "expr": "sum by (variant) (rate(streamrank_clicks_total[10m])) / sum by (variant) (rate(streamrank_impressions_total[10m]))",
+          "legendFormat": "{{variant}}",
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "timeseries",
+      "title": "Events ingested by type",
+      "gridPos": { "h": 7, "w": 12, "x": 0, "y": 12 },
+      "fieldConfig": { "defaults": { "unit": "reqps", "custom": { "fillOpacity": 12, "lineWidth": 2 } } },
+      "targets": [{ "expr": "sum by (event) (rate(streamrank_events_total[1m]))", "legendFormat": "{{event}}", "refId": "A" }]
+    },
+    {
+      "type": "timeseries",
+      "title": "Candidate set size by source",
+      "gridPos": { "h": 7, "w": 12, "x": 12, "y": 12 },
+      "fieldConfig": { "defaults": { "custom": { "fillOpacity": 8, "lineWidth": 2 } } },
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, sum by (le, source) (rate(streamrank_candidates_bucket[5m])))",
+          "legendFormat": "{{source}} p95",
+          "refId": "A"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+.git
+.github
+.venv
+data/*.db
+data/interactions.csv
+web
+docs
+deploy
+observability
+**/__pycache__
+.ruff_cache
+.env
+ml/artifacts

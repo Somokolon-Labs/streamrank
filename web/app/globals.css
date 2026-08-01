@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-paper-50 text-graphite-800 antialiased;
+    background-image:
+      radial-gradient(900px 500px at 88% -10%, rgba(180, 85, 43, 0.07), transparent 60%),
+      radial-gradient(700px 420px at 0% 0%, rgba(74, 107, 79, 0.06), transparent 55%);
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply text-graphite-900;
+    text-wrap: balance;
+  }
+
+  ::selection {
+    @apply bg-copper/20;
+  }
+
+  *:focus-visible {
+    @apply outline-none ring-2 ring-copper/60 ring-offset-2 ring-offset-paper-50;
+  }
+}
+
+@layer components {
+  .label {
+    @apply font-mono text-[10px] uppercase tracking-label text-graphite-500;
+  }
+
+  .card {
+    @apply rounded-xl border border-paper-200 bg-white shadow-card;
+  }
+
+  .card-quiet {
+    @apply rounded-lg border border-paper-200 bg-paper-100/60;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-medium transition-all disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .btn-primary {
+    @apply btn bg-graphite-900 text-paper-50 hover:bg-graphite-800;
+  }
+
+  .btn-copper {
+    @apply btn bg-copper text-white hover:bg-copper-soft;
+  }
+
+  .btn-ghost {
+    @apply btn border border-paper-300 bg-white text-graphite-700 hover:border-graphite-500;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 font-mono text-[11px];
+  }
+
+  .field {
+    @apply w-full rounded-lg border border-paper-300 bg-white px-3 py-2 text-sm text-graphite-900 placeholder:text-graphite-500 focus:border-copper;
+  }
+
+  .metric {
+    @apply font-mono text-2xl font-medium tabular-nums text-graphite-900;
+  }
+
+  .row-divide > * + * {
+    @apply border-t border-paper-200;
+  }
+}
+
+.scroll-slim::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.scroll-slim::-webkit-scrollbar-thumb {
+  background: rgba(20, 18, 15, 0.16);
+  border-radius: 999px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}

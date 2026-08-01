@@ -1,0 +1,80 @@
+name: streamrank
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: stream
+      POSTGRES_PASSWORD: stream
+      POSTGRES_DB: streamrank
+    ports: ["5433:5432"]
+    volumes: ["pgdata:/var/lib/postgresql/data"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U stream -d streamrank"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  redis:
+    image: redis:7-alpine
+    command: ["redis-server", "--maxmemory", "256mb", "--maxmemory-policy", "allkeys-lru"]
+    ports: ["6380:6379"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  api:
+    build: .
+    image: streamrank/api:1.0.0
+    environment:
+      APP_ENV: docker
+      DATABASE_URL: postgresql://stream:stream@postgres:5432/streamrank
+      REDIS_ENABLED: "true"
+      REDIS_URL: redis://redis:6379/0
+      LOG_JSON: "true"
+      WEB_CONCURRENCY: "2"
+      PORT: "8200"
+    ports: ["8200:8200"]
+    depends_on:
+      postgres: { condition: service_healthy }
+      redis: { condition: service_healthy }
+    restart: unless-stopped
+
+  storefront:
+    build:
+      context: ./web
+      args:
+        NEXT_PUBLIC_API_URL: http://localhost:8200
+        NEXT_PUBLIC_USE_MOCKS: "false"
+    image: streamrank/storefront:1.0.0
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:8200
+      NEXT_PUBLIC_USE_MOCKS: "false"
+    ports: ["3100:3000"]
+    depends_on: [api]
+    restart: unless-stopped
+
+  prometheus:
+    image: prom/prometheus:v2.55.1
+    volumes:
+      - ./observability/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+    command: ["--config.file=/etc/prometheus/prometheus.yml", "--storage.tsdb.retention.time=24h"]
+    ports: ["9091:9090"]
+    restart: unless-stopped
+
+  grafana:
+    image: grafana/grafana:11.3.1
+    environment:
+      GF_SECURITY_ADMIN_USER: admin
+      GF_SECURITY_ADMIN_PASSWORD: streamrank
+      GF_USERS_ALLOW_SIGN_UP: "false"
+    volumes:
+      - ./observability/grafana:/etc/grafana/provisioning:ro
+    ports: ["3002:3000"]
+    depends_on: [prometheus]
+    restart: unless-stopped
+
+volumes:
+  pgdata:

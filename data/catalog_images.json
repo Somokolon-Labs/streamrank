@@ -1,0 +1,698 @@
+{
+  "audio": [
+    {
+      "id": 9058883,
+      "photographer": "Saeed Khokhar",
+      "url": "https://images.pexels.com/photos/9058883/pexels-photo-9058883.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/9058883/pexels-photo-9058883.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Sleek black headphones with a reflection on a white background."
+    },
+    {
+      "id": 18311088,
+      "photographer": "Dextar Studio \u2122",
+      "url": "https://images.pexels.com/photos/18311088/pexels-photo-18311088.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/18311088/pexels-photo-18311088.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "A flat lay of a smartphone, laptop, and headphones showcasing a sleek tech setup."
+    },
+    {
+      "id": 3394650,
+      "photographer": "Sound On",
+      "url": "https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Sleek overhead view of modern white wireless headphones on a clean white background."
+    },
+    {
+      "id": 9058878,
+      "photographer": "Saeed Khokhar",
+      "url": "https://images.pexels.com/photos/9058878/pexels-photo-9058878.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/9058878/pexels-photo-9058878.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Close-up of white headphones on a reflective white surface, showcasing modern design."
+    },
+    {
+      "id": 3394653,
+      "photographer": "Sound On",
+      "url": "https://images.pexels.com/photos/3394653/pexels-photo-3394653.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/3394653/pexels-photo-3394653.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Stylish white wireless headphones on a white background, perfect for music lovers."
+    },
+    {
+      "id": 3394648,
+      "photographer": "Sound On",
+      "url": "https://images.pexels.com/photos/3394648/pexels-photo-3394648.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/3394648/pexels-photo-3394648.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Close-up of modern white wireless headphones on a white background, perfect for tech and audio themes."
+    },
+    {
+      "id": 3394662,
+      "photographer": "Sound On",
+      "url": "https://images.pexels.com/photos/3394662/pexels-photo-3394662.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/3394662/pexels-photo-3394662.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Creative concept of books wearing headphones, symbolizing audiobooks or learning."
+    },
+    {
+      "id": 33298190,
+      "photographer": "Puru Raj",
+      "url": "https://images.pexels.com/photos/33298190/pexels-photo-33298190.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/33298190/pexels-photo-33298190.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Minimalistic product shot of a black wireless audio device with sleek design on a white background."
+    }
+  ],
+  "computing": [
+    {
+      "id": 29765806,
+      "photographer": "Jilly Noble",
+      "url": "https://images.pexels.com/photos/29765806/pexels-photo-29765806.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/29765806/pexels-photo-29765806.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Stylish pink-themed workspace featuring a laptop, vintage camera, and stationery on a tidy desk."
+    },
+    {
+      "id": 29765802,
+      "photographer": "Jilly Noble",
+      "url": "https://images.pexels.com/photos/29765802/pexels-photo-29765802.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/29765802/pexels-photo-29765802.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "A pink aesthetic workspace featuring a laptop mockup, cupcakes, and a coffee mug for a creative office setup."
+    },
+    {
+      "id": 211856,
+      "photographer": "Pineapple Supply Co.",
+      "url": "https://images.pexels.com/photos/211856/pexels-photo-211856.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/211856/pexels-photo-211856.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Modern minimalistic desk setup featuring a laptop, pot plant, black pineapple, and decorative spider."
+    },
+    {
+      "id": 12200696,
+      "photographer": "Boris K.",
+      "url": "https://images.pexels.com/photos/12200696/pexels-photo-12200696.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/12200696/pexels-photo-12200696.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Black-and-white photo of a laptop on a table with coffee, perfect for remote work themes."
+    },
+    {
+      "id": 11982694,
+      "photographer": "Claire  L\u00f3",
+      "url": "https://images.pexels.com/photos/11982694/pexels-photo-11982694.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/11982694/pexels-photo-11982694.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "A sleek laptop on a modern desk alongside stylish ceramic vases, embodying minimalism."
+    },
+    {
+      "id": 29283981,
+      "photographer": "Kenneth Surillo",
+      "url": "https://images.pexels.com/photos/29283981/pexels-photo-29283981.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/29283981/pexels-photo-29283981.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "A vibrant home office space with a vertical monitor, laptop, and creative lighting."
+    },
+    {
+      "id": 29052901,
+      "photographer": "Jos\u00e9 Hermes Furtunato",
+      "url": "https://images.pexels.com/photos/29052901/pexels-photo-29052901.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/29052901/pexels-photo-29052901.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Hands typing on a laptop outdoors, capturing the essence of remote work in nature."
+    },
+    {
+      "id": 62689,
+      "photographer": "OVAN",
+      "url": "https://images.pexels.com/photos/62689/pexels-photo-62689.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/62689/pexels-photo-62689.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Top view of a creative workspace with camera, laptop, and accessories, perfect for a designer or photographer."
+    }
+  ],
+  "wearables": [
+    {
+      "id": 12564670,
+      "photographer": "Adrian Regeci",
+      "url": "https://images.pexels.com/photos/12564670/pexels-photo-12564670.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/12564670/pexels-photo-12564670.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Black and white smartwatch on white surface with bold digital display, showcasing modern technology style."
+    },
+    {
+      "id": 31541678,
+      "photographer": "Ebayzar",
+      "url": "https://images.pexels.com/photos/31541678/pexels-photo-31541678.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/31541678/pexels-photo-31541678.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Minimalist black smartwatch with rubber strap, showcased on vivid orange background, perfect for tech enthusiasts."
+    },
+    {
+      "id": 8839887,
+      "photographer": "VVS \u2122",
+      "url": "https://images.pexels.com/photos/8839887/pexels-photo-8839887.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/8839887/pexels-photo-8839887.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Sophisticated black wristwatch showcasing luxury design on a display stand."
+    },
+    {
+      "id": 12880803,
+      "photographer": "Adrian Regeci",
+      "url": "https://images.pexels.com/photos/12880803/pexels-photo-12880803.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/12880803/pexels-photo-12880803.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "A sleek close-up showing a minimalist view of a laptop, keyboard, and smartwatch."
+    },
+    {
+      "id": 3568518,
+      "photographer": "Drew Williams",
+      "url": "https://images.pexels.com/photos/3568518/pexels-photo-3568518.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/3568518/pexels-photo-3568518.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Top view of a stylish man with headphones, smartphone, and swagger magazine on a round table."
+    },
+    {
+      "id": 11677077,
+      "photographer": "Connor Scott McManus",
+      "url": "https://images.pexels.com/photos/11677077/pexels-photo-11677077.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/11677077/pexels-photo-11677077.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Close-up of a smartwatch displaying 'You Matter' with a tattooed arm in view."
+    },
+    {
+      "id": 6157411,
+      "photographer": "Mungai Mutugi",
+      "url": "https://images.pexels.com/photos/6157411/pexels-photo-6157411.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/6157411/pexels-photo-6157411.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Close-up of a stylish wristwatch with a blue dial on a reflective surface."
+    },
+    {
+      "id": 14312717,
+      "photographer": "Bimal  Chhetry",
+      "url": "https://images.pexels.com/photos/14312717/pexels-photo-14312717.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/14312717/pexels-photo-14312717.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Close-up of an Omega wristwatch with Roman numerals, held casually by a hand."
+    }
+  ],
+  "photography": [
+    {
+      "id": 16671406,
+      "photographer": "Ali Dashti",
+      "url": "https://images.pexels.com/photos/16671406/pexels-photo-16671406.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/16671406/pexels-photo-16671406.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Top view of a professional camera on a vibrant red background, perfect for photography concepts."
+    },
+    {
+      "id": 26292003,
+      "photographer": "Amar  Preciado",
+      "url": "https://images.pexels.com/photos/26292003/pexels-photo-26292003.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/26292003/pexels-photo-26292003.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Close-up view of a DSLR camera featuring a zoom lens, showcasing advanced digital imaging equipment on a black backgroun"
+    },
+    {
+      "id": 821653,
+      "photographer": "Alex Andrews",
+      "url": "https://images.pexels.com/photos/821653/pexels-photo-821653.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/821653/pexels-photo-821653.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Top-view of a classic Reflecta II twin-lens reflex camera on a white background."
+    },
+    {
+      "id": 37796150,
+      "photographer": "Orkhan  Sweden",
+      "url": "https://images.pexels.com/photos/37796150/pexels-photo-37796150.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/37796150/pexels-photo-37796150.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Black compact digital camera with silver lens placed on marble surface in daylight."
+    },
+    {
+      "id": 30759631,
+      "photographer": "JONATHAN PAGAOA",
+      "url": "https://images.pexels.com/photos/30759631/pexels-photo-30759631.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/30759631/pexels-photo-30759631.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Close-up of a black camera on a textured, vibrant yellow background."
+    },
+    {
+      "id": 38561561,
+      "photographer": "_ Whittington",
+      "url": "https://images.pexels.com/photos/38561561/pexels-photo-38561561.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/38561561/pexels-photo-38561561.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Silver camera with lens on wooden table, illuminated by warm light."
+    },
+    {
+      "id": 28472226,
+      "photographer": "Alex Pereyra",
+      "url": "https://images.pexels.com/photos/28472226/pexels-photo-28472226.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/28472226/pexels-photo-28472226.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Close-up of a DSLR camera with lens on white background, ideal for photography and technology themes."
+    },
+    {
+      "id": 31554763,
+      "photographer": "Theresa  Ude",
+      "url": "https://images.pexels.com/photos/31554763/pexels-photo-31554763.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/31554763/pexels-photo-31554763.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Flat lay image of a DSLR camera and two lenses on a vibrant yellow background."
+    }
+  ],
+  "home": [
+    {
+      "id": 32791637,
+      "photographer": "Pu\u0219ca\u0219 Adryan",
+      "url": "https://images.pexels.com/photos/32791637/pexels-photo-32791637.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/32791637/pexels-photo-32791637.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Stylish modern living room with minimalist decor, neutral tones, and green plants."
+    },
+    {
+      "id": 8128872,
+      "photographer": "Julia Filirovska",
+      "url": "https://images.pexels.com/photos/8128872/pexels-photo-8128872.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/8128872/pexels-photo-8128872.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Dried grass elegantly displayed in a clear glass vase, perfect for modern home decor and minimalist style."
+    },
+    {
+      "id": 5793641,
+      "photographer": "Yan Krukau",
+      "url": "https://images.pexels.com/photos/5793641/pexels-photo-5793641.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/5793641/pexels-photo-5793641.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Elegant minimalist living room featuring a wicker chair and neutral decor elements."
+    },
+    {
+      "id": 31467609,
+      "photographer": "Pu\u0219ca\u0219 Adryan",
+      "url": "https://images.pexels.com/photos/31467609/pexels-photo-31467609.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/31467609/pexels-photo-31467609.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Stylish minimalist living room with neutral tones and contemporary furniture."
+    },
+    {
+      "id": 32473241,
+      "photographer": "The Ghazi",
+      "url": "https://images.pexels.com/photos/32473241/pexels-photo-32473241.png?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/32473241/pexels-photo-32473241.png?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Explore this cozy modern living room with a minimalist sofa setup, perfect for interior design inspiration."
+    },
+    {
+      "id": 20573189,
+      "photographer": "Paul Seling",
+      "url": "https://images.pexels.com/photos/20573189/pexels-photo-20573189.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/20573189/pexels-photo-20573189.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Modern minimalist room featuring sleek furniture and decor with elegant lighting and a neutral background."
+    },
+    {
+      "id": 19507871,
+      "photographer": "Studio Naae",
+      "url": "https://images.pexels.com/photos/19507871/pexels-photo-19507871.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/19507871/pexels-photo-19507871.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Elegant white candle with gold and silver baubles for a minimalist festive theme."
+    },
+    {
+      "id": 3097112,
+      "photographer": "Nugroho  Wahyu",
+      "url": "https://images.pexels.com/photos/3097112/pexels-photo-3097112.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/3097112/pexels-photo-3097112.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Minimalist room with Scandinavian design featuring wooden furniture and plants."
+    }
+  ],
+  "kitchen": [
+    {
+      "id": 32103303,
+      "photographer": "gavi",
+      "url": "https://images.pexels.com/photos/32103303/pexels-photo-32103303.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/32103303/pexels-photo-32103303.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "A close-up view of espresso being poured into a glass from a coffee machine, showcasing rich crema."
+    },
+    {
+      "id": 36573009,
+      "photographer": "Gatsby Yang",
+      "url": "https://images.pexels.com/photos/36573009/pexels-photo-36573009.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/36573009/pexels-photo-36573009.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Sleek espresso machine in a luxurious kitchen setting in Meishan, Sichuan, China."
+    },
+    {
+      "id": 13943377,
+      "photographer": "Luo Chris",
+      "url": "https://images.pexels.com/photos/13943377/pexels-photo-13943377.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/13943377/pexels-photo-13943377.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Elegant close-up of a siphon coffee maker with warm lighting in a cozy cafe setting."
+    },
+    {
+      "id": 16645944,
+      "photographer": "aidin gheshlaghi",
+      "url": "https://images.pexels.com/photos/16645944/pexels-photo-16645944.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/16645944/pexels-photo-16645944.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "A peaceful morning scene with Chemex coffee and cookies near a sunlit window."
+    },
+    {
+      "id": 16645946,
+      "photographer": "aidin gheshlaghi",
+      "url": "https://images.pexels.com/photos/16645946/pexels-photo-16645946.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/16645946/pexels-photo-16645946.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Top-down view of a coffee setup with two glasses, a pitcher, and cookies on a checkered tablecloth."
+    },
+    {
+      "id": 33879017,
+      "photographer": "Alef Morais",
+      "url": "https://images.pexels.com/photos/33879017/pexels-photo-33879017.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/33879017/pexels-photo-33879017.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Smiling man brews pour-over coffee in kitchen, enjoying morning ritual."
+    },
+    {
+      "id": 35240184,
+      "photographer": "Blanca Isela",
+      "url": "https://images.pexels.com/photos/35240184/pexels-photo-35240184.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/35240184/pexels-photo-35240184.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "A sleek coffee brewing setup featuring a black kettle, glass drip coffee maker, and manual grinder on a kitchen counter."
+    },
+    {
+      "id": 7736770,
+      "photographer": "Kei Scampa",
+      "url": "https://images.pexels.com/photos/7736770/pexels-photo-7736770.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/7736770/pexels-photo-7736770.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "From above of coffee machine pouring tasty fresh aromatic espresso in to glasses in kitchen of cafe"
+    }
+  ],
+  "fitness": [
+    {
+      "id": 29342147,
+      "photographer": "ALOK DAS",
+      "url": "https://images.pexels.com/photos/29342147/pexels-photo-29342147.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/29342147/pexels-photo-29342147.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Two modern sports shoes with 'SUPER' design on a wooden plank, perfect for outdoor activities."
+    },
+    {
+      "id": 29342144,
+      "photographer": "ALOK DAS",
+      "url": "https://images.pexels.com/photos/29342144/pexels-photo-29342144.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/29342144/pexels-photo-29342144.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Vibrant blue athletic shoes on a wooden floor, perfect for sports enthusiasts."
+    },
+    {
+      "id": 29342151,
+      "photographer": "ALOK DAS",
+      "url": "https://images.pexels.com/photos/29342151/pexels-photo-29342151.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/29342151/pexels-photo-29342151.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Stylish purple sports shoes displayed against a wooden and metal background in New Delhi."
+    },
+    {
+      "id": 24702077,
+      "photographer": "ALOK DAS",
+      "url": "https://images.pexels.com/photos/24702077/pexels-photo-24702077.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/24702077/pexels-photo-24702077.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Modern white sneakers with blue accents displayed against a black marble wall."
+    },
+    {
+      "id": 29699313,
+      "photographer": "ALOK DAS",
+      "url": "https://images.pexels.com/photos/29699313/pexels-photo-29699313.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/29699313/pexels-photo-29699313.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Modern athletic shoes displayed with a tennis racket against an orange backdrop."
+    },
+    {
+      "id": 19577864,
+      "photographer": "ALOK DAS",
+      "url": "https://images.pexels.com/photos/19577864/pexels-photo-19577864.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/19577864/pexels-photo-19577864.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Navy blue sports shoes with orange accents and unique zigzag design, captured in a studio setting."
+    },
+    {
+      "id": 19577862,
+      "photographer": "ALOK DAS",
+      "url": "https://images.pexels.com/photos/19577862/pexels-photo-19577862.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/19577862/pexels-photo-19577862.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Stylish black sneakers showcased on an orange background with wooden decor enhancing footwear fashion appeal."
+    },
+    {
+      "id": 2404959,
+      "photographer": "Frederik S\u00f8rensen",
+      "url": "https://images.pexels.com/photos/2404959/pexels-photo-2404959.png?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/2404959/pexels-photo-2404959.png?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Nike sneaker floating above grass in a sunny Danish garden."
+    }
+  ],
+  "outdoor": [
+    {
+      "id": 22776471,
+      "photographer": "Kurt Barlow",
+      "url": "https://images.pexels.com/photos/22776471/pexels-photo-22776471.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/22776471/pexels-photo-22776471.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "A lone hiker with a backpack stands on a rocky peak in Pe\u00f1alba de la Sierra, Spain."
+    },
+    {
+      "id": 14772122,
+      "photographer": "Th\u01b0\u1ee3ng Hy",
+      "url": "https://images.pexels.com/photos/14772122/pexels-photo-14772122.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/14772122/pexels-photo-14772122.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "A young man explores a lush tropical forest, enjoying an adventure with a backpack."
+    },
+    {
+      "id": 6608038,
+      "photographer": "Anthony Acosta",
+      "url": "https://images.pexels.com/photos/6608038/pexels-photo-6608038.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/6608038/pexels-photo-6608038.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Survival gear essentials arranged as a flat lay for camping and hiking preparedness."
+    },
+    {
+      "id": 35521632,
+      "photographer": "Charlie Dogaong",
+      "url": "https://images.pexels.com/photos/35521632/pexels-photo-35521632.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/35521632/pexels-photo-35521632.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "A lone traveler explores the rugged terrain of Sagada, Philippines, in vibrant outdoor attire."
+    },
+    {
+      "id": 31453948,
+      "photographer": "Mad Knoxx Deluxe",
+      "url": "https://images.pexels.com/photos/31453948/pexels-photo-31453948.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/31453948/pexels-photo-31453948.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Aerial view of a camera and accessories on grass, showcasing photography gear outdoors."
+    },
+    {
+      "id": 19131365,
+      "photographer": "Joris Eschalier",
+      "url": "https://images.pexels.com/photos/19131365/pexels-photo-19131365.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/19131365/pexels-photo-19131365.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Backpacker stands in solitude surveying a forested mountain valley, capturing the essence of adventure."
+    },
+    {
+      "id": 22776489,
+      "photographer": "Kurt Barlow",
+      "url": "https://images.pexels.com/photos/22776489/pexels-photo-22776489.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/22776489/pexels-photo-22776489.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "A hiker explores rocky landscapes near Guadalajara, Spain under a cloudy sky."
+    },
+    {
+      "id": 20094394,
+      "photographer": "Thomas Richard",
+      "url": "https://images.pexels.com/photos/20094394/pexels-photo-20094394.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/20094394/pexels-photo-20094394.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Man wearing a black waterproof backpack on a scenic beach, ready for adventure."
+    }
+  ],
+  "fashion": [
+    {
+      "id": 26736144,
+      "photographer": "Jos\u00e9 Martin Segura Benites",
+      "url": "https://images.pexels.com/photos/26736144/pexels-photo-26736144.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/26736144/pexels-photo-26736144.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Close-up of a stylish black leather bag suspended in a modern, minimalist environment."
+    },
+    {
+      "id": 27046146,
+      "photographer": "Jos\u00e9 Martin Segura Benites",
+      "url": "https://images.pexels.com/photos/27046146/pexels-photo-27046146.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/27046146/pexels-photo-27046146.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Luxury black and brown leather handbags with crocodile texture, perfect for fashion and lifestyle."
+    },
+    {
+      "id": 26965828,
+      "photographer": "Jos\u00e9 Martin Segura Benites",
+      "url": "https://images.pexels.com/photos/26965828/pexels-photo-26965828.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/26965828/pexels-photo-26965828.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Stylish Gino Bigioni leather shoulder bag showcased by hand for modern fashion lovers."
+    },
+    {
+      "id": 13570925,
+      "photographer": "Serch  Arafat",
+      "url": "https://images.pexels.com/photos/13570925/pexels-photo-13570925.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/13570925/pexels-photo-13570925.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "A black handbag captured mid-air with hands reaching towards it against a clear blue sky backdrop."
+    },
+    {
+      "id": 27174557,
+      "photographer": "Jos\u00e9 Martin Segura Benites",
+      "url": "https://images.pexels.com/photos/27174557/pexels-photo-27174557.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/27174557/pexels-photo-27174557.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Stylish dark blue leather handbag held by a woman in a fashion photoshoot."
+    },
+    {
+      "id": 26965805,
+      "photographer": "Jos\u00e9 Martin Segura Benites",
+      "url": "https://images.pexels.com/photos/26965805/pexels-photo-26965805.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/26965805/pexels-photo-26965805.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "A fashionable leather crossbody bag paired with casual attire for a stylish look."
+    },
+    {
+      "id": 4452517,
+      "photographer": "Vlada Karpovich",
+      "url": "https://images.pexels.com/photos/4452517/pexels-photo-4452517.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/4452517/pexels-photo-4452517.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Person holding a leather briefcase and fedora, wearing ripped jeans and brown boots."
+    },
+    {
+      "id": 27046143,
+      "photographer": "Jos\u00e9 Martin Segura Benites",
+      "url": "https://images.pexels.com/photos/27046143/pexels-photo-27046143.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/27046143/pexels-photo-27046143.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Stylish black and brown leather handbags with crocodile texture on a white background."
+    }
+  ],
+  "beauty": [
+    {
+      "id": 11124449,
+      "photographer": "Gaea CBD",
+      "url": "https://images.pexels.com/photos/11124449/pexels-photo-11124449.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/11124449/pexels-photo-11124449.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Colorful flat lay display of skincare oils and creams on pastel backgrounds."
+    },
+    {
+      "id": 24602077,
+      "photographer": "Moni Rathnak",
+      "url": "https://images.pexels.com/photos/24602077/pexels-photo-24602077.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/24602077/pexels-photo-24602077.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Dynamic display of skincare bottles on a glass shelf with cascading water in a pink setting."
+    },
+    {
+      "id": 14656279,
+      "photographer": "TRAFFIC On",
+      "url": "https://images.pexels.com/photos/14656279/pexels-photo-14656279.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/14656279/pexels-photo-14656279.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "A golden oil reflection serum bottle lying on a rippled water surface, highlighted by light."
+    },
+    {
+      "id": 20382236,
+      "photographer": "Vilvah Store",
+      "url": "https://images.pexels.com/photos/20382236/pexels-photo-20382236.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/20382236/pexels-photo-20382236.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Vilvah Milk Drops and Facial Toner on a white backdrop, ideal for skincare promotion."
+    },
+    {
+      "id": 24602066,
+      "photographer": "Moni Rathnak",
+      "url": "https://images.pexels.com/photos/24602066/pexels-photo-24602066.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/24602066/pexels-photo-24602066.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Captivating image of skincare mist bottle with dynamic water splash on pink background."
+    },
+    {
+      "id": 28482020,
+      "photographer": "Yana Romanovich",
+      "url": "https://images.pexels.com/photos/28482020/pexels-photo-28482020.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/28482020/pexels-photo-28482020.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Stylish flat lay of skincare products with natural elements on white fabric."
+    },
+    {
+      "id": 24602079,
+      "photographer": "Moni Rathnak",
+      "url": "https://images.pexels.com/photos/24602079/pexels-photo-24602079.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/24602079/pexels-photo-24602079.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Besoma Milky Jelly Cleanser bottle with droplets against a pink background."
+    },
+    {
+      "id": 24602064,
+      "photographer": "Moni Rathnak",
+      "url": "https://images.pexels.com/photos/24602064/pexels-photo-24602064.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/24602064/pexels-photo-24602064.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "A studio shot of an elegant cosmetic serum with water splashes on a pink background."
+    }
+  ],
+  "gaming": [
+    {
+      "id": 16070479,
+      "photographer": "Marcelo Verfe",
+      "url": "https://images.pexels.com/photos/16070479/pexels-photo-16070479.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/16070479/pexels-photo-16070479.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Modern PlayStation controller with glowing buttons on a dark textured backdrop."
+    },
+    {
+      "id": 4225230,
+      "photographer": "Huy Phan",
+      "url": "https://images.pexels.com/photos/4225230/pexels-photo-4225230.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/4225230/pexels-photo-4225230.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Top view of modern orange gamepad for game console placed on white background"
+    },
+    {
+      "id": 14642112,
+      "photographer": "lance he",
+      "url": "https://images.pexels.com/photos/14642112/pexels-photo-14642112.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/14642112/pexels-photo-14642112.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Minimalist silver Xbox controller positioned on a white surface, highlighting modern gaming technology."
+    },
+    {
+      "id": 6962206,
+      "photographer": "Tam'z Peeranat",
+      "url": "https://images.pexels.com/photos/6962206/pexels-photo-6962206.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/6962206/pexels-photo-6962206.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Close-up of a white Xbox controller against a dark backdrop, highlighting its design."
+    },
+    {
+      "id": 37935954,
+      "photographer": "Jay Moon",
+      "url": "https://images.pexels.com/photos/37935954/pexels-photo-37935954.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/37935954/pexels-photo-37935954.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Close-up of two people using a Super Nintendo controller indoors, emphasizing retro gaming."
+    },
+    {
+      "id": 11591941,
+      "photographer": "Elizabeth Lizzie",
+      "url": "https://images.pexels.com/photos/11591941/pexels-photo-11591941.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/11591941/pexels-photo-11591941.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "A black wireless game controller being held outdoors against a green leafy background."
+    },
+    {
+      "id": 14642111,
+      "photographer": "lance he",
+      "url": "https://images.pexels.com/photos/14642111/pexels-photo-14642111.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/14642111/pexels-photo-14642111.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "A stylish silver game controller with a modern design perfect for tech lovers."
+    },
+    {
+      "id": 14005916,
+      "photographer": "Alex Andrews",
+      "url": "https://images.pexels.com/photos/14005916/pexels-photo-14005916.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/14005916/pexels-photo-14005916.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Elegant handheld gaming device with colorful backlighting against a dark backdrop."
+    }
+  ],
+  "books": [
+    {
+      "id": 8207315,
+      "photographer": "Alexandra Krainyukhova",
+      "url": "https://images.pexels.com/photos/8207315/pexels-photo-8207315.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/8207315/pexels-photo-8207315.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Several books held by hands against a plain backdrop, perfect for educational themes."
+    },
+    {
+      "id": 34889792,
+      "photographer": "Nguyen Duc Toan",
+      "url": "https://images.pexels.com/photos/34889792/pexels-photo-34889792.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/34889792/pexels-photo-34889792.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "A diverse collection of stacked books in a cozy indoor setting with warm lighting."
+    },
+    {
+      "id": 11829140,
+      "photographer": "Capella",
+      "url": "https://images.pexels.com/photos/11829140/pexels-photo-11829140.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/11829140/pexels-photo-11829140.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "A cozy close-up of hands holding a stack of books with decorative flowers on top."
+    },
+    {
+      "id": 2002217,
+      "photographer": "Jess Bailey Designs",
+      "url": "https://images.pexels.com/photos/2002217/pexels-photo-2002217.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/2002217/pexels-photo-2002217.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Closeup stack of old weathered books with white aged sheets in hardcover on blue background"
+    },
+    {
+      "id": 9649655,
+      "photographer": "Nataly Q.",
+      "url": "https://images.pexels.com/photos/9649655/pexels-photo-9649655.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/9649655/pexels-photo-9649655.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "A collection of books with dried flowers on a vibrant yellow surface for aesthetic decoration."
+    },
+    {
+      "id": 207732,
+      "photographer": "Pixabay",
+      "url": "https://images.pexels.com/photos/207732/pexels-photo-207732.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/207732/pexels-photo-207732.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Artistic black and white photo of vertically arranged books viewed from above, showcasing a unique perspective."
+    },
+    {
+      "id": 8447654,
+      "photographer": "Alexandra Krainyukhova",
+      "url": "https://images.pexels.com/photos/8447654/pexels-photo-8447654.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/8447654/pexels-photo-8447654.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Books in various colors stacked on blue fabric, perfect for educational themes."
+    },
+    {
+      "id": 33578985,
+      "photographer": "Danyale R Zink",
+      "url": "https://images.pexels.com/photos/33578985/pexels-photo-33578985.jpeg?auto=compress&cs=tinysrgb&h=350",
+      "large": "https://images.pexels.com/photos/33578985/pexels-photo-33578985.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+      "alt": "Aesthetic still life of vintage journals and antique keys on layered paper, evoking a sense of history and nostalgia."
+    }
+  ]
+}
