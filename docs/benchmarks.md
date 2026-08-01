@@ -69,6 +69,18 @@ service warms the ranker during startup.
 Absolute CTR is high because simulated shoppers are generous clickers; the comparison between
 arms is what the experiment measures, and both arms see identical traffic conditions.
 
+Uplift across repeated runs ranged **+5% to +21%**, and the z-score only clears 1.96 once a run
+accumulates roughly 600 impressions (`--users 120 --steps 5`). Shorter runs show the same direction
+with a wider interval — which is the honest behaviour of a small experiment, not noise to hide.
+
+## A note on tail latency
+
+p50 is a property of the code path; p95 and p99 on a laptop are also a property of whatever else is
+running. A repeat run taken while a GPU fine-tuning job occupied the machine produced
+p50 **15 ms** with p95 **365 ms** and p99 **2.0 s** — same code, same request count, ten times the
+scheduling delay. The smoke suite therefore asserts on p50 and reports p95/p99, and the clean
+numbers above are the ones to compare against.
+
 ## Smoke suite
 
 15/15 checks, including:
