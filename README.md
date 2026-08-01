@@ -7,14 +7,27 @@
 A click changes the next response in milliseconds — and the numbers that prove it are measured,
 not asserted.
 
+**[Live storefront](https://streamrank-storefront.vercel.app)** ·
+**[Live API](https://streamrank-api-nmad.onrender.com/docs)** ·
+[Architecture](docs/architecture.md) ·
+[Benchmarks](docs/benchmarks.md)
+
+[![ci](../../actions/workflows/ci.yml/badge.svg)](../../actions/workflows/ci.yml)
 ![python](https://img.shields.io/badge/python-3.10%20%7C%203.12-B4552B)
 ![next](https://img.shields.io/badge/next.js-16-14120F)
-![p95](https://img.shields.io/badge/p95_latency-25ms-4A6B4F)
-![ndcg](https://img.shields.io/badge/NDCG@10-0.456-4A6B4F)
-![uplift](https://img.shields.io/badge/CTR_uplift-%2B20.7%25-B4552B)
+![p50](https://img.shields.io/badge/p50_latency-0.6ms-4A6B4F)
+![ndcg](https://img.shields.io/badge/NDCG@10-0.456_vs_0.384-4A6B4F)
+![uplift](https://img.shields.io/badge/CTR_uplift-%2B20.7%25_(z%3D3.58)-B4552B)
 ![license](https://img.shields.io/badge/license-MIT-6B6255)
 
 </div>
+
+> **Try it in 30 seconds.** Open the [storefront](https://streamrank-storefront.vercel.app) and
+> click two products in the same category. The rail reorders immediately, the session vector grows,
+> and the panel shows the ranking features of the item you clicked. The public demo runs a real
+> recommender in the browser — the committed catalogue carries trained embeddings, so cosine
+> retrieval, the session EMA and MMR diversification all run client-side. The
+> [live API](https://streamrank-api-nmad.onrender.com/docs) is a free instance; expect a cold start.
 
 ---
 
@@ -148,6 +161,20 @@ Deployed without a backend, the storefront runs a genuine in-browser version of 
 the committed catalogue ships the first eight latent dimensions per item, so cosine retrieval,
 session EMA and MMR all run client-side. Point it at the service with
 `NEXT_PUBLIC_USE_MOCKS=false` and `NEXT_PUBLIC_API_URL`.
+
+## Deployment
+
+Currently live:
+
+| Component | URL | Notes |
+| --- | --- | --- |
+| Storefront | <https://streamrank-storefront.vercel.app> | Vercel, in-browser recommender |
+| API | <https://streamrank-api-nmad.onrender.com/docs> | Render free tier, SQLite, model trained at image build |
+| Images | `ghcr.io/shahriar-ahmed-seam/streamrank-api`, `…-storefront` | published by CI on every push to `main` |
+
+The free instance sleeps when idle, so the first request pays a cold start (the container also
+trains its models during build, not at boot). `deploy/render.yaml` provisions a managed Postgres
+version, and `deploy/k8s/` has the full topology with a nightly retraining CronJob.
 
 ## Repository layout
 
